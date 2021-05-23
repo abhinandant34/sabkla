@@ -4,6 +4,7 @@ import Header from './Header'
 import Home from './Home'
 
 
+
 function App() {
   return (
     <div className="app">
@@ -12,6 +13,7 @@ function App() {
      {/*header*/}  
 
      <Home/>
+    
     </div>
   );
 }

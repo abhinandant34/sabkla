@@ -1,0 +1,13 @@
+.each-slide > div {
+  display: flex;
+  height: 230px;
+  width: 100%;
+}
+.crausel {
+  align-items: center;
+  width: 96%;
+  padding: 2%;
+}
+.arrow__slideshow {
+  color: white;
+}
