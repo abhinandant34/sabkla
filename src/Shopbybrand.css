@@ -1,0 +1,28 @@
+.shopbybrand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  max-height: 350px;
+  min-width: 80px;
+  border: 1px solid black;
+  z-index: 1;
+}
+.brand__image {
+  max-height: 310px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.brand__info {
+  height: 350px;
+}
+.brand__name {
+  text-align: center;
+  font-weight: 800;
+  font-size: 24px;
+}

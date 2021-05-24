@@ -16,3 +16,9 @@
 .home__categoriesheading {
   text-align: center;
 }
+.home__shopbybrand {
+  display: flex;
+}
+.home__shopbybrandheading {
+  text-align: center;
+}

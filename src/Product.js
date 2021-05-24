@@ -20,13 +20,13 @@ function Product({title, image, price,rating}) {
                             <p>★</p>
                         ))}
              
-                    
-                <p>
+             </div>
+               
 
                 <button className="product__addtocart">Add to Cart</button>
 
-                </p>        
-                </div>
+                   
+                
 
             </div>
             

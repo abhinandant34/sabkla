@@ -3,6 +3,7 @@ import './Home.css'
 import Slideshow from './Slideshow'
 import Product from './Product'
 import Categories from './Categories'
+import Shopbybrand from './Shopbybrand'
 
 function Home() {
     return (
@@ -55,12 +56,35 @@ function Home() {
 
                 <br/><br/>
             <h2 className="home__categoriesheading">Categories</h2>
+            <br/>
             <div className="home__categories">
 
                       <Categories/>
 
             </div>
-                
+            <br/>
+            <h2 className="home__shopbybrandheading"> Shop by Brand</h2>
+            <br/>
+                <div className="home__shopbybrand">
+
+                  <Shopbybrand
+                      title="HIMBHOOSHA"
+                      image="./images/himbhoosha.jpeg"
+                  />
+                  <Shopbybrand
+                      title="HIMBHOOSHA"
+                      image="./images/himbhoosha.jpeg"
+                  />
+                  <Shopbybrand
+                      title="HIMBHOOSHA"
+                      image="./images/himbhoosha.jpeg"
+                  />
+                  <Shopbybrand
+                      title="HIMBHOOSHA"
+                      image="./images/himbhoosha.jpeg"
+                  />
+
+                </div>
                
 
             </div>
