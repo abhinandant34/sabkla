@@ -1,0 +1,17 @@
+.categories {
+  display: flex;
+}
+.categorires__section {
+  align-self: center;
+  margin: 2%;
+}
+.categories__img {
+  border-radius: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+}
+.categories__name {
+  text-align: center;
+}

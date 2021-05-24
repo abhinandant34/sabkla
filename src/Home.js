@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.css'
 import Slideshow from './Slideshow'
 import Product from './Product'
+import Categories from './Categories'
 
 function Home() {
     return (
@@ -52,8 +53,11 @@ function Home() {
              
             </div>
 
+                <br/><br/>
             <h2 className="home__categoriesheading">Categories</h2>
             <div className="home__categories">
+
+                      <Categories/>
 
             </div>
                 
