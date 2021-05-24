@@ -16,7 +16,7 @@ function Home() {
             <Slideshow/>
 
             <h2 className="home__nowternding">Now Trending</h2>
-
+                  <br/>
             <div className="home__row">
                  <Product 
                     title="

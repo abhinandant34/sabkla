@@ -8,10 +8,8 @@ function Shopbybrand({image,title}) {
                 
                 <img className="brand__image" src={image}/>
                 <p className="brand__name">{title}</p>
-                                 
-                
-
-            </div>
+     
+        </div>
             
         </div>
     )
