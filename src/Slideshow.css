@@ -6,7 +6,7 @@
 .crausel {
   align-items: center;
   width: 96%;
-  padding: 2%;
+  margin: 2%;
 }
 .arrow__slideshow {
   color: white;
