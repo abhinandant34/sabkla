@@ -4,7 +4,6 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import './Slideshow.css'
 
-
 const slideImages = [
   "/images/1.png",
   "/images/2.png",
