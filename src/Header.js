@@ -4,11 +4,15 @@ import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
+import {Link} from "react-router-dom";
 
 function Header() {
     return (
         <div className='header'>
-           <img  className="header__logo" src="/images/hori_logo.png" />
+         
+         <Link to="/">
+                    <img  className="header__logo" src="/images/hori_logo.png" />
+         </Link>
 
            <div className="header__search">
                
@@ -22,12 +26,15 @@ function Header() {
         <div className="header__alloptions">
 
         <div className="header__nav">
+            
+            <Link to="/checkout">
             <div className="header__option">
 
-            <span className="header__optionLineOne"><ShoppingCartOutlinedIcon className="header__cartIcon" /></span>
-            <span className="header__optionLineTwo">Cart</span>
+<span className="header__optionLineOne"><ShoppingCartOutlinedIcon className="header__cartIcon" /></span>
+<span className="header__optionLineTwo">Cart</span>
 
-            </div>
+</div>
+            </Link>
 
         </div>
         <div className="header__nav">

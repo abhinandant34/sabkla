@@ -36,6 +36,7 @@
 .header__nav {
   display: flex;
   justify-content: space-evenly;
+  text-decoration: black;
 }
 .header__option {
   display: flex;
