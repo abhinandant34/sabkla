@@ -36,13 +36,15 @@
 .header__nav {
   display: flex;
   justify-content: space-evenly;
-  text-decoration: black;
+  text-decoration: none;
 }
 .header__option {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
+  color: black;
+  text-decoration: none;
 }
 .header__optionLineOne {
   align-self: center;
