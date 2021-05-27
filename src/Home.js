@@ -19,6 +19,7 @@ function Home() {
                   <br/>
             <div className="home__row">
                  <Product 
+                 id={1}
                     title="
                     himbhoosha
                     Details!!
@@ -27,29 +28,32 @@ function Home() {
                     image="./images/homeproduct1.JPG"
                     rating={4}
                  />
-                  <Product 
+                  <Product
+                   id={2}
                     title="                    himbhoosha
                     Details!!
                     Black sleek backpack. Black sleek backpack.."
                     price={499}
                     image="./images/homeproduct1.JPG"
-                    rating={4}
+                    rating={2}
                  />
                   <Product 
+                   id={3}
                     title="                    himbhoosha
                     Details!!
                     Black sleek backpack. Black sleek backpack.."
-                    price={499}
+                    price={1299}
                     image="./images/homeproduct1.JPG"
-                    rating={4}
+                    rating={5}
                  />
                   <Product 
+                   id={4}
                     title="                    himbhoosha
                     Details!!
                     Black sleek backpack. Black sleek backpack.."
-                    price={499}
+                    price={799}
                     image="./images/homeproduct1.JPG"
-                    rating={4}
+                    rating={5}
                  />
              
             </div>
