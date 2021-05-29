@@ -1,4 +1,4 @@
-export const initialState={
+export const initialState = {
     cart:[],
 };
 
@@ -9,7 +9,7 @@ const reducer = (state,action)=>{
         case 'ADD_To_CART':
             return {
                 ...state,
-                cart: [...state.basket, action.item],
+                cart: [...state.cart, action.item],
             };
 
             default:
