@@ -38,7 +38,7 @@ function Header() {
             <div className="header__option">
 
 <span className="header__optionLineOne"><ShoppingCartOutlinedIcon className="header__cartIcon" /></span>
-<span className="header__optionLineTwo">{cart?.length} Cart</span>
+<span className="header__optionLineTwo">{SportsBasketball.length}Cart</span>
 
 </div>
             </Link>
