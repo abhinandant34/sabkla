@@ -5,12 +5,12 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import {Link} from "react-router-dom";
-import { useStateValue } from './StateProvider';
-import { SportsBasketball } from '@material-ui/icons';
+import { useStateValue } from "./StateProvider";
+
 
 function Header() {
 
-    const [cart, dispatch] = useStateValue();
+    const [{ cart }, dispatch] = useStateValue();
 
     return (
         <div className='header'>
@@ -38,7 +38,7 @@ function Header() {
             <div className="header__option">
 
 <span className="header__optionLineOne"><ShoppingCartOutlinedIcon className="header__cartIcon" /></span>
-<span className="header__optionLineTwo">{SportsBasketball.length}Cart</span>
+<span className="header__optionLineTwo">{cart?.length}Cart</span>
 
 </div>
             </Link>
