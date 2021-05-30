@@ -6,6 +6,7 @@ import Footer from './Footer'
 import {BrowserRouter as Router, Switch, Route }
 from "react-router-dom";
 import Checkout from './Checkout'
+import Login from './Login'
 
 function App() {
   return (
@@ -14,19 +15,24 @@ function App() {
     <div className="app">
    
 
-    <Header/>
+    
     <Switch>
+      <Route path="/login">
+        
+        <Login />
+
+      </Route>
 
     
     <Route path="/checkout">
    
-    
+    <Header/>
     <Checkout/>
     
     </Route>
  
     <Route path="/">
-    
+    <Header/>
     <Home/>
     <br/><br/>
     <Footer/>
