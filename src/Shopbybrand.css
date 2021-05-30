@@ -1,6 +1,6 @@
 .shopbybrand {
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   justify-content: flex-end;
   margin: 10px;
@@ -29,6 +29,25 @@
 @media only screen and (max-width: 600px) {
   .shopbybrand {
     display: flex;
-    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+    min-width: 100px;
+    border: 1px solid black;
+    z-index: 1;
+  }
+  .brand__image {
+    margin-top: 5px;
+    max-height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .brand__info {
+    height: 170px;
+  }
+  .brand__name {
+    font-weight: 800;
+    font-size: 14px;
   }
 }

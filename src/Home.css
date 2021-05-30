@@ -22,14 +22,34 @@
 .home__shopbybrandheading {
   text-align: center;
 }
+.home__shopbybrand__line {
+  display: flex;
+  flex-direction: row;
+}
 
 @media only screen and (max-width: 600px) {
   .home__row {
-    display: flex;
-    flex-direction: column;
-    margin-left: 8%;
+    overflow-x: auto;
+    margin-right: 5px;
   }
   .home__shopbybrand {
+    display: flex;
     flex-direction: column;
+  }
+  .home__shopbybrand__line {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .home__row {
+    overflow-x: auto;
+  }
+  .home__shopbybrand {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__shopbybrand__line {
+    display: flex;
   }
 }

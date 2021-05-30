@@ -1,5 +1,6 @@
 .categories {
   display: flex;
+  overflow-x: auto;
 }
 .categorires__section {
   align-self: center;
@@ -13,11 +14,39 @@
   max-height: 300px;
 }
 .categories__name {
+  font-size: 28px;
+  font-weight: 600;
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  .categories {
-    display: flex;
-    flex-direction: column;
+  .categories__img {
+    border-radius: 50%;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .categories__name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .categorires__section {
+    margin: 2%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .categories__img {
+    border-radius: 50%;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 160px;
+    max-height: 160px;
+  }
+  .categories__name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .categorires__section {
+    margin: 2%;
   }
 }

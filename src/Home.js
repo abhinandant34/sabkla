@@ -57,7 +57,7 @@ function Home() {
                  />
              
             </div>
-
+            
                 <br/><br/>
             <h2 className="home__categoriesheading">Categories</h2>
             <br/>
@@ -71,6 +71,17 @@ function Home() {
             <br/>
                 <div className="home__shopbybrand">
 
+                 <div className="home__shopbybrand__line">
+                 <Shopbybrand
+                      title="HIMBHOOSHA"
+                      image="./images/himbhoosha.jpeg"
+                  />
+                  <Shopbybrand
+                      title="HIMBHOOSHA"
+                      image="./images/himbhoosha.jpeg"
+                  />
+                 </div>
+                 <div className="home__shopbybrand__line">
                   <Shopbybrand
                       title="HIMBHOOSHA"
                       image="./images/himbhoosha.jpeg"
@@ -79,14 +90,7 @@ function Home() {
                       title="HIMBHOOSHA"
                       image="./images/himbhoosha.jpeg"
                   />
-                  <Shopbybrand
-                      title="HIMBHOOSHA"
-                      image="./images/himbhoosha.jpeg"
-                  />
-                  <Shopbybrand
-                      title="HIMBHOOSHA"
-                      image="./images/himbhoosha.jpeg"
-                  />
+                  </div>
 
                 </div>
                
