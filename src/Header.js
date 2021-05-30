@@ -6,11 +6,19 @@ import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutline
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import {Link} from "react-router-dom";
 import { useStateValue } from "./StateProvider";
+import { auth } from './firebase';
 
 
 function Header() {
 
-    const [{ cart }, dispatch] = useStateValue();
+    const [{ cart,user }, dispatch] = useStateValue();
+
+    const handleAuthenticaton = () => {
+        
+        if(user){
+            auth.signOut();
+        }
+    }
 
     return (
         <div className='header'>
@@ -54,11 +62,11 @@ function Header() {
 
         </div>
         <div className="header__nav">
-            <Link to='/login'>
-            <div className="header__option">
+            <Link to={!user && '/login'}>
+            <div onClick={handleAuthenticaton}  className="header__option">
 
 <span className="header__optionLineOne"><PersonOutlineOutlinedIcon className="header__avatarIcon" /></span>
-<span className="header__optionLineTwo">SignIn</span>
+<span className="header__optionLineTwo">{user ? 'Sign Out':'Sign In'}</span>
     
 </div>
             </Link>
