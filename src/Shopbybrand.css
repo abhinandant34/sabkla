@@ -5,7 +5,7 @@
   justify-content: flex-end;
   margin: 10px;
   padding: 20px;
-  width: 100%;
+  width: 95%;
   max-height: 390px;
   min-width: 80px;
   border: 1px solid black;
@@ -25,4 +25,10 @@
   text-align: center;
   font-weight: 800;
   font-size: 24px;
+}
+@media only screen and (max-width: 600px) {
+  .shopbybrand {
+    display: flex;
+    flex-direction: column;
+  }
 }
