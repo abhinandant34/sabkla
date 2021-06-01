@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAgA5atgTDpfiH4qblsA0tdve330oXhmYY",
-  authDomain: "sabkla.firebaseapp.com",
-  databaseURL: "https://sabkla-default-rtdb.firebaseio.com",
-  projectId: "sabkla",
-  storageBucket: "sabkla.appspot.com",
-  messagingSenderId: "928475658908",
-  appId: "1:928475658908:web:508414d1ff173a45674b59",
+  apiKey: "AIzaSyAn9mJkC7XWgCad-58_JHK0h-RxulXPqnI",
+  authDomain: "sabkla-final.firebaseapp.com",
+  databaseURL: "https://sabkla-final-default-rtdb.firebaseio.com/",
+  projectId: "sabkla-final",
+  storageBucket: "sabkla-final.appspot.com",
+  messagingSenderId: "882656939395",
+  appId: "1:882656939395:web:10371351d576ba3cc53ab6",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
