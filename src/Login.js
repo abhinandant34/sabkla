@@ -46,7 +46,7 @@ function Login() {
 
                     <button className='login__signInButton' type='submit' onClick={signIn}> Sign In</button>
            </form>
-           <p>YOu agree with term and conditions</p>
+         
 
            <Link to='/signup'>
             Create a new account
