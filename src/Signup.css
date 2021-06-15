@@ -1,10 +1,10 @@
-.login {
+.signup {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.login__logo {
+.signup__logo {
   align-self: flex-end;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -12,7 +12,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-.login__container {
+.signup__container {
   width: 300px;
   height: fit-content;
   display: flex;
@@ -21,23 +21,23 @@
   border: 1px solid lightgray;
   padding: 20px;
 }
-.login__container > h1 {
+.signup__container > h1 {
   font-weight: 500;
   margin-bottom: 20px;
 }
-.login__container > form > h5 {
+.signup__container > form > h5 {
   margin-bottom: 5px;
 }
-.login__container > form > input {
+.signup__container > form > input {
   margin-top: 15px;
   margin-bottom: 10px;
   width: 98%;
 }
-.login__container > p {
+.signup__container > p {
   margin-top: 15px;
   font-size: 12px;
 }
-.login__signInButton {
+.signup__registerButton {
   background: lightsalmon;
   border-radius: 2px;
   width: 100%;

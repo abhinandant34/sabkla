@@ -23,19 +23,6 @@ function Login() {
                     .catch(error=>alert(error.message))
         }
 
-        const register = e => {
-            e.preventDefault();
-            auth
-            .createUserWithEmailAndPassword(email, password)
-            .then((auth)=>{
-
-                if(auth) {
-                    history.push('/')
-                }
-                
-            })
-            .catch(error => alert(error.message))
-        }
 
     return (
         <div className="login">
@@ -49,7 +36,7 @@ function Login() {
                <h5>
                    E-mail
                </h5>
-               <input type="text" value={email} onChange={e=>setEmail(e.target.value)}/>
+               <input type="email" value={email} onChange={e=>setEmail(e.target.value)}/>
 
                <h5>
                    Password
@@ -61,9 +48,9 @@ function Login() {
            </form>
            <p>YOu agree with term and conditions</p>
 
-           <button  onClick={register} className='login__registerButton' >
-               Create a new Account
-           </button>
+           <Link to='/signup'>
+            Create a new account
+       </Link>
 
        </div>
             
