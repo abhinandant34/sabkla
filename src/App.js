@@ -4,12 +4,12 @@ import Header from './Header'
 import Home from './Home'
 import Footer from './Footer'
 import Signup from './Signup'
-import {BrowserRouter as Router, Switch, Route }
-from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route }from "react-router-dom";
 import Checkout from './Checkout'
 import Login from './Login'
 import { useStateValue } from "./StateProvider";
 import {auth} from "./firebase"
+import UploadProducts from './UploadProducts'
 
 function App() {
 
@@ -61,6 +61,13 @@ function App() {
       <Route path="/signup">
         
         <Signup />
+
+      </Route>
+
+
+      <Route path="/upload">
+        
+        <UploadProducts />
 
       </Route>
 
