@@ -1,48 +1,47 @@
 import React,{ useEffect } from "react";
 import './App.css';
-import Header from './Header'
-import Signup from './Signup'
 import {BrowserRouter as Router, Switch, Route }from "react-router-dom";
-import Checkout from './Checkout'
-import Login from './Login'
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "./Pages/StateProvider";
 import {auth} from "./firebase"
 import HomePage from './Pages/Homepage/Homepage'
 import Loginpage from './Pages/Loginpage/Loginpage'
 import Registerpage from './Pages/RegisterPage/RegisterPage'
+import ProductsPage from './Pages/ProductsPage/ProductsPage'
+import Cart from './Pages/Cart/Cart'
+import Checkout from "./Checkout";
 
 function App() {
 
-  // const [{},dispathch]=useStateValue();
+  const [{},dispathch]=useStateValue();
 
-  // useEffect(()=>{
+  useEffect(()=>{
 
-  //       auth.onAuthStateChanged(authUser=>{
-  //         console.log('THE USER IS >>>',authUser);
+        auth.onAuthStateChanged(authUser=>{
+          console.log('THE USER IS >>>',authUser);
 
-  //         if(authUser)
-  //         {
+          if(authUser)
+          {
 
-  //           dispatchEvent({
-  //             type:'SET_USER',
-  //             user: authUser
+            dispatchEvent({
+              type:'SET_USER',
+              user: authUser
 
-  //           })
+            })
 
-  //         }
-  //         else
-  //         {
+          }
+          else
+          {
 
-  //           dispatchEvent({
-  //             type:'SET_USER',
-  //             user: null
+            dispatchEvent({
+              type:'SET_USER',
+              user: null
               
-  //           })
+            })
 
-  //         }
-  //       })
+          }
+        })
 
-  // },[])
+  },[])
   return (
 
     <Router>
@@ -63,13 +62,18 @@ function App() {
         <Registerpage/>
 
       </Route>
+      <Route path="/products">
+        
+        <ProductsPage/>
+
+      </Route>
 
 
   
-    <Route path="/checkout">
+    <Route path="/cart">
+      <Checkout/>
    
-    <Header/>
-    <Checkout/>
+ 
     
     </Route>
  

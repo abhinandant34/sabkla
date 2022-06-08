@@ -1,8 +1,9 @@
 import React from 'react'
 import "./Checkout.css"
 import Checkoutproduct from "./Checkoutproduct";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "./Pages/StateProvider";
 import Subtotal from "./Subtotal";
+import Card from './Pages/components/Products/Card/Card'
 
 function Checkout() {
 
@@ -19,12 +20,9 @@ function Checkout() {
                 <h2 className="checkout__title">YOUR  SHOPPING CART</h2>
             
             {cart.map(item =>(
-                <Checkoutproduct
-                    id={item.id}
+                <Card
                     title={item.title}
-                    image={item.image}
-                    price={item.price}
-                    rating={item.rating}
+                    img={item.image}
                 />
             ))}
 
