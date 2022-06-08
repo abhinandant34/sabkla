@@ -1,0 +1,31 @@
+.footer
+{
+    height: 40vh;
+    color: white;
+    background-color: #1F487C;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+.footer-section
+{
+    margin: 5vh auto;
+}
+.footer-section-header
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+.connect
+{
+    display: flex;
+}
+.section-item
+{
+    margin: 1vh .5vw;
+}
+.section-item:hover
+{
+    text-decoration: underline;
+}

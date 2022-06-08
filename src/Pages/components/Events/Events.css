@@ -1,0 +1,21 @@
+.events
+{  
+    width: 75%;
+    margin: 10vh auto;
+}
+.fairs
+{
+    margin: 5vh auto;
+}
+.fair-img
+{
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+.fair-images
+{
+    width: 22%;
+    margin: 1vh;
+    border-radius: 10px;
+}

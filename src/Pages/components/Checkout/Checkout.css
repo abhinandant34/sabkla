@@ -1,0 +1,15 @@
+.checkout
+{
+    width: 80%;
+    margin: 10vh auto;
+}
+.cart-header
+{
+    font-size: 1.8rem;
+    border-bottom: 1px solid black;
+    padding: 2vh 0;
+}
+tr
+{
+    border: 1px solid black;
+}

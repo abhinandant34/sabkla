@@ -1,0 +1,38 @@
+.products{
+    width: 80%;
+    margin: auto;
+}
+.product-categories
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.product-category
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #FE9A00;
+    color: white;
+    padding: 1vh 2vw;
+}
+.books-category-header
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #FE9A00;
+    color: white;
+    padding: 1vh 2vw;
+    border-radius: 10px;
+    margin: 5vh auto;
+}
+.books-category-info
+{
+    font-size: 1.3rem;
+    padding: 1vh 2vw;
+    margin: 5vh auto;
+}
+.books-category-cards
+{
+    display: flex;
+    justify-content: space-evenly;
+}

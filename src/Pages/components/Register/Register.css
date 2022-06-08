@@ -1,0 +1,41 @@
+.register
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.register p{
+    font-size: 1.2rem;
+}
+.register-section
+{
+    margin: 10vh auto;
+    background-color: #f9f9f9;
+
+}
+.register-section-inputs
+{
+    padding: 10vh 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+    border: 1px solid #EFEFE6;
+}
+.register-section-input
+{
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #EFEFE6;
+    padding: .2vh .53vw;
+}
+.register-section-btn
+{
+    width: 50%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 1vh 1vw;
+    color: white;
+    background-color: #1F487C;
+}

@@ -1,0 +1,31 @@
+.about-content
+{
+    display:flex ;
+    justify-content: space-evenly;
+    margin: 10vh auto;
+}
+.about-heading
+{
+    color: #FE9A00;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.about-vision
+{
+    width: 40%;
+    font-size: 1.2rem;
+}
+.about-founder
+{
+    display:flex ;
+    justify-content: space-evenly;
+    margin: 10vh auto;
+}
+.founder{
+    width: 30%;
+}
+.founder-info
+{    font-size: 1.2rem;
+    text-align: justify;
+    display: flex;
+}

@@ -1,0 +1,21 @@
+.navbar-items
+{
+    display: flex;
+    background-color: #1F487C;
+    color: white;
+    justify-content: center;
+    gap: 4vw;
+    font-size: 1.2rem;
+}
+.navbar-item
+{
+    padding: 1vh 0vw;
+}
+.navbar-item:hover
+{
+    color: #FE9A00;
+}
+.link
+{
+    text-decoration: none;
+}

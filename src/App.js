@@ -1,48 +1,48 @@
 import React,{ useEffect } from "react";
 import './App.css';
 import Header from './Header'
-import Home from './Home'
-import Footer from './Footer'
 import Signup from './Signup'
 import {BrowserRouter as Router, Switch, Route }from "react-router-dom";
 import Checkout from './Checkout'
 import Login from './Login'
 import { useStateValue } from "./StateProvider";
 import {auth} from "./firebase"
-import UploadProducts from './UploadProducts'
+import HomePage from './Pages/Homepage/Homepage'
+import Loginpage from './Pages/Loginpage/Loginpage'
+import Registerpage from './Pages/RegisterPage/RegisterPage'
 
 function App() {
 
-  const [{},dispathch]=useStateValue();
+  // const [{},dispathch]=useStateValue();
 
-  useEffect(()=>{
+  // useEffect(()=>{
 
-        auth.onAuthStateChanged(authUser=>{
-          console.log('THE USER IS >>>',authUser);
+  //       auth.onAuthStateChanged(authUser=>{
+  //         console.log('THE USER IS >>>',authUser);
 
-          if(authUser)
-          {
+  //         if(authUser)
+  //         {
 
-            dispatchEvent({
-              type:'SET_USER',
-              user: authUser
+  //           dispatchEvent({
+  //             type:'SET_USER',
+  //             user: authUser
 
-            })
+  //           })
 
-          }
-          else
-          {
+  //         }
+  //         else
+  //         {
 
-            dispatchEvent({
-              type:'SET_USER',
-              user: null
+  //           dispatchEvent({
+  //             type:'SET_USER',
+  //             user: null
               
-            })
+  //           })
 
-          }
-        })
+  //         }
+  //       })
 
-  },[])
+  // },[])
   return (
 
     <Router>
@@ -53,25 +53,19 @@ function App() {
     <Switch>
       <Route path="/login">
         
-        <Login />
+        <Loginpage/>
 
       </Route>
       
 
-      <Route path="/signup">
+      <Route path="/register">
         
-        <Signup />
+        <Registerpage/>
 
       </Route>
 
 
-      <Route path="/upload">
-        
-        <UploadProducts />
-
-      </Route>
-
-    
+  
     <Route path="/checkout">
    
     <Header/>
@@ -80,12 +74,8 @@ function App() {
     </Route>
  
     <Route path="/">
-    <Header/>
-    <Home/>
-    <br/><br/>
-    <Footer/>
-    </Route>
-
+      <HomePage/>
+      </Route>
     </Switch>
   
     

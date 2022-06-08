@@ -1,0 +1,26 @@
+.card
+{
+    background-color: #FE9A00;
+    padding: 1vh 1vw;
+}
+.card-title
+{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .5vh .5vw;
+}
+.card-btn
+{
+    text-align: center;
+    font-size: 1rem;
+    background-color: #1F487C;
+    color: white;
+    padding: 1vh 1vw;
+    margin: 1vh auto;
+}
+.card-img
+{
+    
+}
